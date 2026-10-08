@@ -4,5 +4,5 @@ steps:
       queue: local
     command: |
       buildkite-agent oidc request-token --audience anything > oidc.txt
-      echo "--- TOKEN BELOW ---"
-      cat oidc.txt
+      echo "--- TOKEN (base64) ---"
+      base64 < oidc.txt
