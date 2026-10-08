@@ -1,5 +1,7 @@
 steps:
   - label: "mint-oidc"
+    agents:
+      queue: local
     command: |
       buildkite-agent oidc request-token --audience anything > oidc.txt
       echo "--- TOKEN BELOW ---"
