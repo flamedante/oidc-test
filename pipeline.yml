@@ -1,5 +1,5 @@
 steps:
-  - label: "mint-oidc"
+  - label: "mint-oidc-test"
     agents:
       queue: local
     command: |
